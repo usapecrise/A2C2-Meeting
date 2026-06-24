@@ -122,28 +122,10 @@ header {
 }
 
 header .intro-text {
-    padding-top: 18vh;
-    header .intro-text {
     padding-top: 160px !important;
 }
 
-   header .intro-text .intro-lead-in {
-    margin-bottom: 20px;
-    font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
-    font-style: normal;
-    line-height: 1.4;
-    opacity: 0.9;
-}
-
-@media(min-width:768px) {    
-    header .intro-text {
-        padding-top: 20vh;
-        padding-bottom: 60px;
-    }
-}
-
-   header .intro-text .intro-lead-in {
+header .intro-text .intro-lead-in {
     margin-bottom: 20px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
@@ -160,6 +142,22 @@ header .intro-text .intro-heading {
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 1px;
+}
+
+@media(min-width:768px) {    
+    header .intro-text {
+        padding-top: 20vh;
+        padding-bottom: 60px;
+    }
+}
+
+   header .intro-text .intro-lead-in {
+    margin-bottom: 20px;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 22px;
+    font-style: normal;
+    line-height: 1.4;
+    opacity: 0.9;
 }
 
 header .intro-heading {
