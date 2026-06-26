@@ -1,41 +1,19 @@
 <footer>
-  <div class="container text-center">
 
     <p class="footer-text">
-      © {{ 'now' | date: "%Y" }} US APEC-RISE Program
-      <span class="divider">·</span>
-      All rights reserved.
+        © {{ 'now' | date: "%Y" }} US APEC-RISE Program
+        <span class="divider">·</span>
+        All rights reserved.
     </p>
 
-    <ul class="list-inline social-buttons" style="margin-top:10px;">
-      {% for network in site.social %}
+    <ul class="list-inline social-buttons">
+        {% for network in site.social %}
         <li>
-          <a href="{{ network.url }}">
-            <i class="fa fa-{{ network.title }}"></i>
-          </a>
+            <a href="{{ network.url }}">
+                <i class="fa fa-{{ network.title }}"></i>
+            </a>
         </li>
-      {% endfor %}
+        {% endfor %}
     </ul>
 
-  </div>
 </footer>
-
-<style>
-.footer-text {
-    font-size:14px;
-    color:#6b7c8f;
-    text-align:center;
-    margin:0;
-}
-
-.footer-text .divider {
-    margin:0 8px;
-    color:#9aa7b5;
-}
-
-footer {
-    padding:20px 0;
-    background:#f8fafc;
-    margin-top:60px;   /* adds space above footer */
-}
-</style>
