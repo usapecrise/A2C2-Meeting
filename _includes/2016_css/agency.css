@@ -898,33 +898,38 @@ section#contact {
 }
 
 /* BACK TO TOP BUTTON */
-.back-to-top {
+#backToTop {
     position: fixed;
-    bottom: 30px;
     right: 30px;
+    bottom: 30px;
     width: 52px;
     height: 52px;
     background: #355f7c;
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color: white;
+    font-size: 20px;
+
     text-decoration: none;
-    z-index: 9999;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+
     opacity: 0;
     pointer-events: none;
-    transition: opacity .3s ease, background .3s ease;
+    transition: opacity .25s ease, background .25s ease;
+    z-index: 9999;
 }
 
-.back-to-top svg {
-    width: 20px;
-    height: 20px;
-    display: block;
-}
-
-.back-to-top.show {
+#backToTop.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+#backToTop:hover {
+    background: #2c4f68;
 }
 
 .tag-row {
