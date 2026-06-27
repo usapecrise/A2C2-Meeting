@@ -902,8 +902,8 @@ section#contact {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     background: #355f7c;
     border-radius: 50%;
     display: flex;
@@ -911,15 +911,15 @@ section#contact {
     justify-content: center;
     text-decoration: none;
     z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease, background .3s ease;
 }
 
-.back-to-top span {
-    width: 12px;
-    height: 12px;
-    border-left: 3px solid white;
-    border-top: 3px solid white;
-    transform: rotate(45deg);
-    margin-top: 4px;
+.back-to-top svg {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .back-to-top.show {
@@ -927,9 +927,6 @@ section#contact {
     pointer-events: auto;
 }
 
-.back-to-top:hover {
-    background: #2c4f68;
-}
 .tag-row {
   display: flex;
   justify-content: center;
