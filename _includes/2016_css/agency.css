@@ -1415,8 +1415,8 @@ section {
 
 .register-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 42px;
+  grid-template-columns: 35% 65%;
+  gap: 40px;
   padding: 42px;
   align-items: start;
 }
