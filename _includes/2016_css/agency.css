@@ -901,8 +901,8 @@ section#contact {
 
 #backToTop {
     position: fixed;
-    bottom: 30px;
     right: 30px;
+    bottom: 30px;
     width: 52px;
     height: 52px;
     background: #355f7c;
@@ -913,11 +913,11 @@ section#contact {
     justify-content: center;
 
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity .3s ease;
+    transition: all .25s ease;
     z-index: 9999;
 }
 
@@ -928,12 +928,13 @@ section#contact {
 
 #backToTop:hover {
     background: #2c4f68;
+    transform: translateY(-2px);
 }
 
-#backToTop .backToTopArrow {
-    color: #fff;
-    font-size: 26px;
-    line-height: 1;
+#backToTop svg {
+    width: 18px;
+    height: 18px;
+    display: block;
 }
 
 .tag-row {
