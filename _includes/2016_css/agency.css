@@ -896,9 +896,6 @@ section#contact {
   );
 }
 
-/* BACK TO TOP BUTTON */
-/* ===== BACK TO TOP ===== */
-
 #backToTop {
     position: fixed;
     right: 30px;
@@ -907,17 +904,10 @@ section#contact {
     height: 52px;
     background: #355f7c;
     border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-decoration: none;
     box-shadow: 0 8px 20px rgba(0,0,0,.18);
 
     opacity: 0;
     pointer-events: none;
-
     transition: opacity .25s ease, background-color .25s ease;
 
     z-index: 9999;
@@ -930,16 +920,21 @@ section#contact {
 
 #backToTop:hover {
     background: #2c4f68;
-    transform: translateY(-2px);
 }
-#backToTop svg {
-    width: 18px;
-    height: 18px;
-    display: block;
-    flex-shrink: 0;
 
-    transform: none !important;
-    position: static !important;
+#backToTop::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 12px;
+    height: 12px;
+
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+
+    transform: translate(-50%, -35%) rotate(-45deg);
 }
 
 .tag-row {
